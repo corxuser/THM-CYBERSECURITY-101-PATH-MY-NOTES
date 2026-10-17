@@ -47,7 +47,8 @@ Permission types include:
 - Read
 - Write
 
-The [image](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/ntfs_permissions.png) illustrates how each permission applies to files and folders.
+The <img width="880" height="439" alt="image" src="https://github.com/user-attachments/assets/f00a5868-f9f5-4689-8490-b262d5f356e0" />
+ illustrates how each permission applies to files and folders.
 
 ### 3. Alternate Data Streams (ADS) in NTFS
 
@@ -64,7 +65,8 @@ The [image](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersec
   - Number of processors
   - Temporary directory locations
 
-### 5. [System32 Directory](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/system_32.jpg)
+### 5. [System32 Directory] <img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/cf420d00-d363-4c0c-a87b-75031c606423" />
+
 
 - Contains essential system files required for Windows to operate.
 - Deleting files here can break the operating system.
@@ -86,11 +88,14 @@ The two main types of local user accounts are:
 - UAC provides the following protections:
   - Even administrator accounts do not run with elevated privileges by default.
   - When a task requires higher privileges, the system asks the user for confirmation.
-- When installing software, Windows may display the [UAC shield](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/UAC_shield.png) and request [administrator credentials](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/UAC_admin_creds.png).
+- When installing software, Windows may display the [UAC shield]<img width="122" height="111" alt="image" src="https://github.com/user-attachments/assets/3080ad82-4f2f-47d2-8cc8-26501ea8e3ad" />
+ and request [administrator credentials]<img width="443" height="462" alt="image" src="https://github.com/user-attachments/assets/9efcc91b-77fe-48d6-a977-b3d0837aad65" />
+
 
 ### 8. Task Manager
 
-The [Task Manager](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/task_manager.png) displays real-time information, including:
+The [Task Manager]  displays real-time information, including:
+<img width="661" height="578" alt="image" src="https://github.com/user-attachments/assets/f5214e9e-d97c-4b38-8232-36e9845a95c5" />
 
 - Running applications
 - Background processes
@@ -127,21 +132,26 @@ In Part 2 of the Windows Fundamentals module, we learn about System Configuratio
 
 System Configuration tabs:
 
-1. **[General tab](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/general_tab.png)**
+1. **[General tab]<img width="589" height="400" alt="image" src="https://github.com/user-attachments/assets/06798ce0-f464-45ab-834b-58dde5870427" />
+)**
    - Selects the startup mode:
      - **Normal startup:** Loads all device drivers and services.
      - **Diagnostic startup:** Loads only basic devices and services.
      - **Selective startup:** Lets you customize what loads (system services, startup items, and boot configuration).
-2. **[Boot tab](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/boot_tab.png)**
+2. **[Boot tab]<img width="581" height="399" alt="image" src="https://github.com/user-attachments/assets/6fad60f5-0cc8-4fe2-bffe-02f419e409fe" />
+**
    - Configures boot options such as Safe boot, No GUI boot, Boot log, and timeout settings.
-3. **[Services tab](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/service_tab.png)**
+3. **[Services tab]<img width="583" height="395" alt="image" src="https://github.com/user-attachments/assets/bc3129a7-b0fd-4971-ab36-a5f32360838f" />
+**
    - Lists system services, including their names, manufacturers, statuses, and disabled dates.
    - Includes an option to hide Microsoft services to help avoid disabling critical components.
-4. **[Tools tab](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/tool_tab.png)**
+4. **[Tools tab]<img width="586" height="403" alt="image" src="https://github.com/user-attachments/assets/65ea2c5a-1d25-469e-a0a2-1ccb43d2de68" />
+**
    - Launches built-in Windows tools, such as Command Prompt and Event Viewer.
    - Displays the tool name, description, and executable path (for example, `C:\Windows\System32\cmd.exe`).
 
-### 2. [Resource Monitor](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/resource_monitor.png)
+### 2. [Resource Monitor]<img width="1261" height="804" alt="image" src="https://github.com/user-attachments/assets/4282c188-f064-4076-a72c-1a9bff73ccf6" />
+
 
 - A powerful diagnostic tool for advanced troubleshooting.
 - Shows per-process and overall usage of:
