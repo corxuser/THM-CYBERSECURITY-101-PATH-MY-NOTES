@@ -149,7 +149,8 @@ Learn to search the internet efficiently and use specialised search engines and 
 - It is useful for:
   - Identifying open ports and services.
   - Tracking software versions across the web.
-- Example search: [apache_2.4.1](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/censys_apache_search.png)
+- Example search: <img width="1910" height="5267" alt="image" src="https://github.com/user-attachments/assets/898f28a8-48dc-470e-87f4-7a1035bdeee4" />
+
   - Returns hosts running Apache 2.4.1.
   - Results include:
     - IP addresses
