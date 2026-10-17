@@ -2,11 +2,7 @@
 
 > English translation of the original study notes. Commands, technical identifiers, and source links are preserved. Add screenshots and images manually where needed.
 
-## Related Resources
 
-- [TryHackMe — HH 2026](https://app.notion.com/p/THM-HH-2026-3acf9a50a539806782e5eec874bab9fd?pvs=21)
-- [HTB Academy](https://app.notion.com/p/HTB-ACADEMY-3b5f9a50a539801fa599d5a2d71aebaa?pvs=21)
-- [The Scout Mindset](https://app.notion.com/p/The-Scout-Mindset-3cbf9a50a53980fba4e6e55e88c9d01c?pvs=21)
 
 ---
 
@@ -14,7 +10,7 @@
 
 **Platform:** TryHackMe (Cyber Security 101 path)  
 **VM / Lab:** Browser-based modules  
-**Time spent:** 5 minutes
+
 
 ## Objective
 
@@ -138,7 +134,8 @@ Learn to search the internet efficiently and use specialised search engines and 
 - A search engine for internet-connected devices.
 - It can be used to find servers, network equipment, ICS systems, and IoT devices.
 - It helps identify exposed systems and outdated software versions.
-- Example search: [Apache 2.4.1](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/shodan_apache_search.jpg)
+- Example search:<img width="936" height="437" alt="image" src="https://github.com/user-attachments/assets/c974af2c-6044-4491-9d07-c9b5d3f36a5a" />
+
   - **Total results:** 13,493 servers running Apache 2.4.1.
   - **Top countries**, for example:
     - **Japan:** 3,350
