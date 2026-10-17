@@ -174,7 +174,8 @@ System Configuration tabs:
   - `ipconfig` — Displays network configuration.
 - Most commands support `/?` to display their syntax and help information.
 
-### 4. [Windows Registry](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/registry_editor.png)
+### 4. [Windows Registry]<img width="507" height="190" alt="image" src="https://github.com/user-attachments/assets/8e433317-8eea-45b6-90be-29693ecf0228" />
+
 
 - Can be opened through Start/Search by running `regedit`.
 - The Windows Registry is a hierarchical database used to store:
@@ -302,7 +303,8 @@ This module introduces the core concepts and functionality provided by Active Di
   - Reduces manual configuration and improves scalability.
   - Provides consistent access control and compliance.
 
-### 2. [Active Directory Domain Services (AD DS)](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/Users_AD.png)
+### 2. [Active Directory Domain Services (AD DS)]<img width="913" height="451" alt="image" src="https://github.com/user-attachments/assets/8b548b6b-a673-4483-92f7-486a777c0a7d" />
+
 
 The main objects in AD include:
 
@@ -316,7 +318,8 @@ The main objects in AD include:
   - Collections of users or machines.
   - Used to simplify permission management.
 
-### 3. [Organizational Units (OUs)](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/Organization_units.png)
+### 3. [Organizational Units (OUs)]<img width="915" height="451" alt="image" src="https://github.com/user-attachments/assets/c4cbc6c1-dc00-4ad5-85e4-319ffec040a6" />
+
 
 - OUs are containers used to organize AD objects (users, computers, and groups).
 - A company might have OUs for Administration, Marketing, R&D, Sales, and so on.
@@ -339,9 +342,12 @@ The main objects in AD include:
 **How to delegate control:**
 
 1. Open Active Directory Users and Computers.
-2. [Right-click the target OU.](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/delegate_right_click.png)
-3. Select [“Delegate Control”.](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/delegate_right_click.png)
-4. A [wizard appears.](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/delegate_wizard.png)
+2. [Right-click the target OU.]<img width="311" height="372" alt="image" src="https://github.com/user-attachments/assets/41016e13-d7e8-43a8-8753-3bbf273e7eaa" />
+
+3. Select [“Delegate Control”.]<img width="311" height="372" alt="image" src="https://github.com/user-attachments/assets/f0e2a4c7-6d55-4f96-9e96-15649e800227" />
+
+4. A [wizard appears.] <img width="583" height="570" alt="image" src="https://github.com/user-attachments/assets/15270217-c394-4ccc-987d-a8e9be38b71c" />
+
 5. Use the wizard to:
    - Select a user or group.
    - Select specific tasks (such as resetting passwords or creating/deleting user accounts).
@@ -361,7 +367,8 @@ The main objects in AD include:
 - The Computers container is not an Organizational Unit (OU), so Group Policies cannot be applied directly to it.
 - To manage devices effectively, especially in large environments, it is best to create dedicated OUs for different device types.
 
-**[Recommended OU structure](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/OU_structure.jpg)**
+**[Recommended OU structure]<img width="842" height="227" alt="image" src="https://github.com/user-attachments/assets/4ccdf1c7-2bfe-405c-80e8-08d968eaccb3" />
+**
 
 - Organizing devices into OUs enables targeted policy application and easier management.
 - These OUs are created directly under the domain for clarity and manageability: `itconnect.local`.
@@ -376,7 +383,8 @@ The main objects in AD include:
   - Organizational Units
   - Groups
   - Individual users or computers
-- The tool used to manage Group Policy is [Group Policy Management](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/group_policy_management.png).
+- The tool used to manage Group Policy is [Group Policy Management]<img width="954" height="577" alt="image" src="https://github.com/user-attachments/assets/15ff425f-ab2d-4295-b0d9-e971b7677d5b" />
+.
 - GPOs are created under the Group Policy Objects container.
 - They are then linked to specific OUs or domains.
 - Examples:
@@ -384,7 +392,8 @@ The main objects in AD include:
   - `Default Domain Controllers Policy` — Linked to the Domain Controllers OU.
   - `Sales GPO` — Linked to the Sales OU.
 
-### 8. [GPO Scope and Settings](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/scope_GPO.png)
+### 8. [GPO Scope and Settings]<img width="954" height="577" alt="image" src="https://github.com/user-attachments/assets/28ee91bf-609c-49c1-b8c2-fad20a2a7f32" />
+
 
 Each GPO has two main configuration areas:
 
@@ -404,13 +413,16 @@ Windows domains rely on secure authentication protocols to verify user identitie
 
 **Kerberos workflow:**
 
-1. **[Initial logon](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/kerberos_initial_login.png)**
+1. **[Initial logon] <img width="1047" height="416" alt="image" src="https://github.com/user-attachments/assets/9242588e-cdd0-4b4e-b73f-ae50a8e5dd73" />
+**
    - The user sends their **username and timestamp**, encrypted with a key, to the **Key Distribution Center (KDC)**.
    - The KDC (running on the Domain Controller) verifies the credentials and returns a **Ticket-Granting Ticket (TGT)** encrypted with the **krbtgt hash**, and a **Session Key** encrypted with the user's password hash.
-2. **[Requesting access to a service](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/kerberos_request_TGS.png)**
-   - The user sends the **TGT**, **Session Key**, a new (encrypted) timestamp, and the requested service's **Service Principal Name (SPN)** to the KDC.
+2. **[Requesting access to a service]**
+   - The user sends the **TGT**, **Se<img width="1049" height="486" alt="image" src="https://github.com/user-attachments/assets/d124f83d-eb4e-4385-ac1f-4ec958c368e2" />
+ssion Key**, a new (encrypted) timestamp, and the requested service's **Service Principal Name (SPN)** to the KDC.
    - The KDC returns a **Ticket-Granting Service (TGS) ticket** encrypted with the service owner's hash and a **Service Session Key** for secure communication with the service.
-3. **[Accessing the service](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/kerberos_access_service.png)**
+3. **[Accessing the service] <img width="1029" height="362" alt="image" src="https://github.com/user-attachments/assets/c2883d34-b87e-4c4a-a4a1-b9124d8881ae" />
+**
    - The user presents the TGS ticket and Service Session Key to the target service.
    - The service decrypts the TGS using its own password hash and validates the session key.
    - If it is valid, access is granted.
@@ -425,7 +437,8 @@ Windows domains rely on secure authentication protocols to verify user identitie
 - It is still supported in environments where Kerberos is not feasible (workgroups and legacy systems).
 - NTLM is considered less secure and should be avoided when possible.
 
-**[NetNTLM workflow](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/NTLM_workflow.png)**
+**[NetNTLM workflow] <img width="1051" height="605" alt="image" src="https://github.com/user-attachments/assets/209d277e-4991-492d-a8b5-0fe9fabe79c6" />
+ **
 
 1. **Client → Server:** Sends an authentication request.
 2. **Server → Client:** Sends a challenge (a random number).
@@ -443,7 +456,8 @@ Windows domains rely on secure authentication protocols to verify user identitie
   - Localized **administrative control**.
   - Better **security boundaries**.
 
-#### [Trees (Hierarchical Domain Structure)](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/trees.png)
+#### [Trees (Hierarchical Domain Structure) <img width="1218" height="963" alt="image" src="https://github.com/user-attachments/assets/310bbe6e-f650-4d8b-bd8a-6954d1812b4d" />
+
 
 - A tree is a collection of domains that share a common namespace.
 - Example:
@@ -458,7 +472,8 @@ Windows domains rely on secure authentication protocols to verify user identitie
   - **Domain Admins:** Full control over their own domain.
   - **Enterprise Admins:** Full control over all domains in the forest.
 
-#### [Forests (Multiple Trees in an Enterprise)](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/forests.png)
+#### [Forests (Multiple Trees in an Enterprise)] <img width="2778" height="1119" alt="image" src="https://github.com/user-attachments/assets/45572daa-f29e-4f02-8a11-144f6127fb5b" />
+
 
 - A forest is a collection of one or more domain trees that do not share the same namespace.
 - This is common in mergers or large enterprises with different IT infrastructures.
@@ -466,7 +481,8 @@ Windows domains rely on secure authentication protocols to verify user identitie
   - Tree 1: `thm.local`, `uk.thm.local`, `us.thm.local`
   - Tree 2: `mht.local`, `eu.mht.local`, `asia.mht.local`
 
-#### [Trust Relationships](https://github.com/FROSTmatic-hub/tryhackme-notes/blob/main/cybersecurity-101/images/trust.png)
+#### [Trust Relationships] <img width="963" height="386" alt="image" src="https://github.com/user-attachments/assets/847d2bf4-0ef2-47b5-891c-5b436b39642b" />
+
 
 - Trusts allow users in one domain to access resources in another domain.
 - Types of trust:
